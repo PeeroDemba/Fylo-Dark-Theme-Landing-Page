@@ -1,0 +1,921 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+header {
+  background-color: hsl(217, 28%, 15%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+header .logo {
+  padding-left: 5vw;
+}
+header .logo img {
+  width: 8rem;
+}
+header ul {
+  list-style-type: none;
+  padding-right: 5vw;
+}
+header ul li {
+  display: inline-block;
+  width: 5rem;
+}
+header ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+header ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  background-color: hsl(217, 28%, 15%);
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  color: white;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0;
+  background-image: url(./images/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+}
+main img {
+  width: 35rem;
+}
+main h1 {
+  max-width: 55%;
+  line-height: 3rem;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+main p {
+  max-width: 55%;
+  color: #aaa;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+main a {
+  padding: 1rem 5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  background-image: linear-gradient(90deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+main a:hover {
+  background-image: linear-gradient(90deg, hsl(176, 70%, 80%), hsl(198, 61%, 68%));
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  min-height: 85vh;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(218, 28%, 13%);
+  color: white;
+  padding: 5% 15%;
+}
+.icons .card1,
+.icons .card2,
+.icons .card3,
+.icons .card4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.icons .card1 h2,
+.icons .card2 h2,
+.icons .card3 h2,
+.icons .card4 h2 {
+  font-size: 1.4rem;
+  margin: 2rem 0 1rem 0;
+}
+.icons .card1 p,
+.icons .card2 p,
+.icons .card3 p,
+.icons .card4 p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #aaa;
+}
+.icons .card1 img,
+.icons .card2 img,
+.icons .card3 img,
+.icons .card4 img {
+  width: 5rem;
+}
+
+.productive {
+  display: flex;
+  color: white;
+  background-color: hsl(218, 28%, 13%);
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+.productive .img {
+  width: 50%;
+  padding-left: 5rem;
+}
+.productive .img img {
+  width: 100%;
+}
+.productive .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 5rem;
+  width: 50%;
+}
+.productive .text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.productive .text p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #aaa;
+  margin: 0.5rem 0;
+}
+.productive .text .link {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+  margin-top: 1.5rem;
+  width: 10.9rem;
+}
+.productive .text .link:hover {
+  border-bottom: 1px solid white;
+}
+.productive .text .link:hover p {
+  cursor: pointer;
+  background-color: white;
+}
+.productive .text .link:hover a {
+  color: white;
+}
+.productive .text .link a {
+  text-decoration: none;
+  color: hsl(176, 68%, 64%);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+}
+.productive .text .link p {
+  padding: 0.5rem 0.15rem;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  background-color: hsl(176, 68%, 64%);
+}
+.productive .text .link i {
+  color: hsl(218, 28%, 13%);
+}
+
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  min-height: 75vh;
+  background-color: hsl(218, 28%, 13%);
+  color: white;
+  background-image: url(./images/bg-quotes.png);
+  background-repeat: no-repeat;
+  background-size: 5%;
+  background-position: top 15% left 8%;
+}
+.testimonials .first,
+.testimonials .second,
+.testimonials .third {
+  width: 25%;
+  height: 29%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem 1rem;
+  background-color: hsl(219, 30%, 18%);
+  margin-top: -5rem;
+  border-radius: 0.2rem;
+  box-shadow: 1rem 1rem 0 0.1rem hsl(215, 25%, 14%);
+}
+.testimonials .first p:first-child,
+.testimonials .second p:first-child,
+.testimonials .third p:first-child {
+  margin-bottom: 1rem;
+}
+.testimonials .first > p,
+.testimonials .second > p,
+.testimonials .third > p {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  color: #aaa;
+}
+.testimonials .first .flex,
+.testimonials .second .flex,
+.testimonials .third .flex {
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
+}
+.testimonials .first .flex img,
+.testimonials .second .flex img,
+.testimonials .third .flex img {
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+.testimonials .first .flex span,
+.testimonials .second .flex span,
+.testimonials .third .flex span {
+  display: block;
+  font-weight: 700;
+  font-size: 0.7rem;
+  color: white;
+  margin-bottom: 0.3rem;
+}
+.testimonials .first .flex p,
+.testimonials .second .flex p,
+.testimonials .third .flex p {
+  font-size: 0.7rem;
+  color: #aaa;
+}
+
+.signup {
+  width: 50%;
+  margin: auto;
+  background-color: hsl(218, 28%, 13%);
+  min-height: 30vh;
+  border-radius: 0.5rem;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 5vw;
+  margin-top: -15vh;
+  box-shadow: 2px 2px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.signup h2 {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+.signup p {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  color: #aaa;
+  margin-bottom: 0.5rem;
+}
+.signup form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.signup form input[type=email] {
+  width: 68%;
+  height: 2.5rem;
+  border-radius: 1.5rem;
+  padding: 0 1rem;
+  border: none;
+}
+.signup form input[type=button] {
+  width: 28%;
+  height: 2.5rem;
+  border-radius: 1.5rem;
+  font-size: 0.8rem;
+  border: none;
+  background-image: linear-gradient(90deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  color: white;
+}
+.signup form input[type=button]:hover {
+  background-image: linear-gradient(90deg, hsl(176, 70%, 80%), hsl(198, 61%, 68%));
+  cursor: pointer;
+}
+
+footer {
+  background-color: hsl(216, 53%, 9%);
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  color: #aaa;
+}
+footer .footergrid {
+  display: grid;
+  grid-template-columns: 22vw 13vw 10vw 10vw 11vw;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 0.8rem;
+  gap: 2rem;
+  min-height: 40vh;
+  margin-top: 2rem;
+}
+footer .footergrid .logo {
+  grid-column: 1/span 5;
+  align-self: flex-end;
+}
+footer .footergrid .logo img {
+  width: 9rem;
+}
+footer .footergrid .one {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+footer .footergrid .one img {
+  width: 0.7rem;
+}
+footer .footergrid .two .phone,
+footer .footergrid .two .email {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.3rem;
+}
+footer .footergrid .two .phone img,
+footer .footergrid .two .email img {
+  width: 1rem;
+}
+footer .footergrid .three ul,
+footer .footergrid .four ul {
+  list-style-type: none;
+}
+footer .footergrid .three ul li,
+footer .footergrid .four ul li {
+  margin-bottom: 1rem;
+}
+footer .footergrid .three ul li a,
+footer .footergrid .four ul li a {
+  color: #aaa;
+  text-decoration: none;
+}
+footer .footergrid .three ul li a:hover,
+footer .footergrid .four ul li a:hover {
+  font-weight: 900;
+}
+footer .footergrid .five {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .footergrid .five p {
+  padding: 0.3rem 0.5rem 0.2rem 0.5rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+footer .footergrid .five p:hover {
+  border: 1px solid hsl(176, 68%, 64%);
+  cursor: pointer;
+}
+footer .footergrid .five p:hover i {
+  color: hsl(176, 68%, 64%);
+}
+
+.attribution {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+  background-color: hsl(218, 28%, 13%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1279px) {
+  .testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    min-height: 75vh;
+    background-color: hsl(218, 28%, 13%);
+    color: white;
+    background-image: url(./images/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-size: 5%;
+    background-position: top 15% left 2%;
+  }
+  .testimonials .first,
+  .testimonials .second,
+  .testimonials .third {
+    width: 30%;
+    height: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem 1rem;
+    background-color: hsl(219, 30%, 18%);
+    margin-top: -5rem;
+    border-radius: 0.2rem;
+    box-shadow: 0.5rem 0.5rem 0 0.1rem hsl(215, 25%, 14%);
+  }
+  .testimonials .first p:first-child,
+  .testimonials .second p:first-child,
+  .testimonials .third p:first-child {
+    margin-bottom: 1rem;
+  }
+  .signup {
+    width: 60%;
+    margin: auto;
+    background-color: hsl(218, 28%, 13%);
+    min-height: 30vh;
+    border-radius: 0.5rem;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 3vw;
+    margin-top: -15vh;
+    box-shadow: 2px 2px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  footer .footergrid {
+    display: grid;
+    grid-template-columns: 28vw 17vw 10vw 10vw 13vw;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 0.8rem;
+    gap: 2rem;
+    min-height: 40vh;
+  }
+}
+@media (max-width: 1023px) {
+  main img {
+    width: 30rem;
+  }
+  main h1 {
+    max-width: 70%;
+    line-height: 2.8rem;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+  main p {
+    max-width: 80%;
+    color: #aaa;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(218, 28%, 13%);
+    color: white;
+    padding: 5% 10%;
+  }
+  .productive {
+    display: flex;
+    color: white;
+    background-color: hsl(218, 28%, 13%);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+  }
+  .productive .img {
+    width: 50%;
+    padding-left: 2rem;
+  }
+  .productive .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 2rem;
+    width: 50%;
+  }
+  .testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    min-height: 75vh;
+    background-color: hsl(218, 28%, 13%);
+    color: white;
+    background-image: url(./images/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-size: 5%;
+    background-position: top 15% left 1%;
+  }
+  .testimonials .first,
+  .testimonials .second,
+  .testimonials .third {
+    width: 30%;
+    height: 35%;
+    margin-top: -10rem;
+  }
+  .signup {
+    width: 70%;
+    margin: auto;
+    background-color: hsl(218, 28%, 13%);
+    min-height: 30vh;
+    border-radius: 0.5rem;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem 3vw;
+    margin-top: -15vh;
+    box-shadow: 2px 2px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  footer .footergrid {
+    display: grid;
+    grid-template-columns: 29vw 18vw 9vw 9vw 13vw;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 0.8rem;
+    gap: 1.5rem;
+    min-height: 40vh;
+  }
+}
+@media (max-width: 767px) {
+  main {
+    background-color: hsl(217, 28%, 15%);
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0;
+    background-image: url(./images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+  }
+  main img {
+    width: 25rem;
+  }
+  main h1 {
+    max-width: 80%;
+    margin-bottom: 1rem;
+  }
+  main p {
+    max-width: 80%;
+    margin-bottom: 1rem;
+  }
+  .icons {
+    display: grid;
+    grid-template-columns: 80vw;
+    gap: 5rem;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(218, 28%, 13%);
+    color: white;
+  }
+  .productive {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: hsl(218, 28%, 13%);
+    gap: 2rem;
+    min-height: 100vh;
+    justify-content: center;
+  }
+  .productive .img {
+    width: 80vw;
+    padding-left: 0rem;
+    margin-top: 3rem;
+  }
+  .productive .img > img {
+    width: 100%;
+  }
+  .productive .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8rem 0;
+    width: 80vw;
+    height: 40vh;
+    margin: auto;
+  }
+  .productive .text h2 {
+    font-size: 2rem;
+    padding-right: 0;
+  }
+  .productive .text p {
+    padding-right: 0;
+  }
+  .productive .text .link {
+    display: flex;
+    align-items: flex-end;
+    width: 10.9rem;
+  }
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    min-height: 120vh;
+    background-color: hsl(218, 28%, 13%);
+    color: white;
+    background-image: url(./images/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-size: 5%;
+    background-position: top 6.5rem left 9%;
+    padding-top: 7.5rem;
+  }
+  .testimonials .first,
+  .testimonials .second,
+  .testimonials .third {
+    width: 80vw;
+    height: 15%;
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem 1rem;
+    background-color: hsl(219, 30%, 18%);
+  }
+  .signup {
+    width: 80vw;
+    margin: auto;
+    background-color: hsl(218, 28%, 13%);
+    min-height: 40vh;
+    border-radius: 0.5rem;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 5vw;
+    margin-top: -20vh;
+    margin-bottom: 3rem;
+  }
+  .signup p {
+    font-size: 0.8rem;
+  }
+  .signup form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .signup form input[type=email] {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 1.5rem;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+  .signup form input[type=button] {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 1.5rem;
+    padding: 0 1rem;
+    font-size: 0.8rem;
+    background-image: linear-gradient(90deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    color: white;
+  }
+  footer {
+    background-color: hsl(216, 53%, 9%);
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footergrid {
+    display: grid;
+    grid-template-columns: 80vw;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 0.8rem;
+    gap: 1rem;
+    min-height: 55vh;
+  }
+  footer .footergrid .logo {
+    grid-column: 1/span 1;
+    align-self: flex-end;
+  }
+  footer .footergrid .logo img {
+    width: 8rem;
+  }
+  footer .footergrid .one {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  footer .footergrid .one img {
+    width: 0.7rem;
+  }
+  footer .footergrid .two .phone,
+  footer .footergrid .two .email {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  footer .footergrid .two .phone img,
+  footer .footergrid .two .email img {
+    width: 0.8rem;
+  }
+  footer .footergrid .three ul,
+  footer .footergrid .four ul {
+    list-style-type: none;
+  }
+  footer .footergrid .three ul li,
+  footer .footergrid .four ul li {
+    margin-bottom: 1rem;
+  }
+  footer .footergrid .three ul li a,
+  footer .footergrid .four ul li a {
+    text-decoration: none;
+  }
+  footer .footergrid .three ul li a:hover,
+  footer .footergrid .four ul li a:hover {
+    font-weight: 900;
+  }
+  footer .footergrid .five {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    background-color: hsl(217, 28%, 15%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+  }
+  header .logo {
+    padding-left: 5vw;
+  }
+  header .logo img {
+    width: 7rem;
+  }
+  header ul {
+    list-style-type: none;
+    padding-right: 5vw;
+  }
+  header ul li {
+    display: inline-block;
+    width: 4rem;
+    text-align: right;
+  }
+  main {
+    background-color: hsl(217, 28%, 15%);
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+    background-image: url(./images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+  }
+  main img {
+    width: 20rem;
+  }
+  main h1 {
+    max-width: 85%;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+  main p {
+    max-width: 85%;
+  }
+  .icons {
+    display: grid;
+    grid-template-columns: 80vw;
+    gap: 5rem;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(218, 28%, 13%);
+    color: white;
+  }
+  .productive {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: hsl(218, 28%, 13%);
+    gap: 2rem;
+    min-height: 120vh;
+    justify-content: center;
+  }
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    min-height: 130vh;
+    background-color: hsl(218, 28%, 13%);
+    color: white;
+    background-image: url(./images/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-size: 5%;
+    background-position: top 3rem left 9%;
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+  }
+  .testimonials .first,
+  .testimonials .second,
+  .testimonials .third {
+    width: 80vw;
+    height: 18%;
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem 1rem;
+    background-color: hsl(219, 30%, 18%);
+  }
+  .signup {
+    min-height: 50vh;
+    margin-top: -25vh;
+    margin-bottom: 3rem;
+  }
+  .signup h2 {
+    line-height: 2.2rem;
+  }
+  footer .footergrid {
+    min-height: 40vh;
+  }
+  footer .footergrid .five {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+}
+@media (orientation: landscape) and (max-width: 916px) {
+  header {
+    height: 15vh;
+  }
+  main img {
+    width: 35rem;
+  }
+  main h1 {
+    margin-bottom: 1.5rem;
+  }
+  main p {
+    margin-bottom: 1.5rem;
+  }
+  main a {
+    padding: 1rem 5rem;
+  }
+  .testimonials {
+    min-height: 170vh;
+    background-position: top 6.5rem left 9%;
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+  }
+  .signup {
+    width: 80%;
+    min-height: 60vh;
+    margin-top: -30vh;
+  }
+  footer {
+    min-height: 80vh;
+  }
+  footer .footergrid {
+    min-height: 60vh;
+    margin-top: 3rem;
+  }
+}
